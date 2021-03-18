@@ -18,6 +18,14 @@ const start = () => {
 
 const formatter = (array) => {
     // Use this space to solve the problem
+    if (array.length === 1) {
+        return array.toString();
+    } else if (array.length === 2) {
+        return array.join(" and ");
+    } else {
+        return array.join(", ").replace(/,(?=[^,]*$)/, " and");
+    }
 };
+
 
 start();
