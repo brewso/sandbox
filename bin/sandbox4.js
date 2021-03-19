@@ -12,6 +12,7 @@ const start = () => {
 
 const isItAnAnagram = (String1, String2) => {
     // Use this space to solve the problem
+    return String1.toLowerCase().split("").sort().join("").trim() === String2.toLowerCase().split("").sort().join("").trim();
 };
 
 start();
